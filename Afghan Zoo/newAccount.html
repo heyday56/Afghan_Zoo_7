@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Account</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="body">
+	<div class="articl">
+		<form method="post" action="list.html" class="form" onsubmit="return newAccountValidate();">
+			<label class="msg">Type Your New Info</label>
+			<input type="text" name="newAccountUsername" id="newAccountUsername" required placeholder="Type Username" class="input">
+			<input type="password" name="newAccountPassword" id="newAccountPassword" required placeholder="Type Password" class="input">
+			<label id="error" class="chAccountErrorMsg"></label>
+			<input type="submit" name="newAccountSubmit" value="Change" id="newAccountSubmit" class="submit">
+		</form>
+	</div>
+	<script type="text/javascript" src="script/javaScript.js"></script>
+</body>
+</html>

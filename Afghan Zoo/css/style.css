@@ -1,0 +1,370 @@
+*{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+/* main style*/
+.body{
+	background-color: #bbb;
+}
+.articl{
+	min-width: 40%;
+	max-width: 40%;
+	min-height: 50%;
+	max-width: 50%;
+	margin: 0px auto;
+	margin-top: 13%;
+	background-color: #555;
+	border-radius: 20px;
+}
+.articl .form{
+	display: flex;
+	flex-direction: column;
+	background-color: #555;
+	border-radius: 20px;
+	margin: 0px auto;
+	min-width: 80%;
+	max-width: 80%;
+}
+.articl .form .msg{
+	font-size: 22px;
+	font-family: georgia;
+	margin: 0px auto;
+	color: #eee;
+}
+
+.articl .form .input{
+	border-bottom: 3px solid #fff;
+	border-radius: 20px;
+	background-color: #555;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 5%;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.articl .form .submit{
+	border-radius: 20px;
+	background-color: rosybrown;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border: none;
+	font-size: 20px;
+	height: inherit;
+}
+.articl .form .submit:hover{
+	background-color: sandybrown;
+}
+.articl .form .error{
+	color: yellow;
+	margin-top: 5%;
+}
+@media (max-width:1080px){
+	.body .articl{
+		margin-top: 13%;
+	}
+}
+@media (max-width:1080px){
+	.body .articl{
+		margin-top: 18%;
+	}
+}
+@media (max-width:992px){
+	.body .articl{
+		margin-top: 24%;
+	}
+}
+@media (max-width:800px){
+	.body .articl{
+		margin-top: 27%;
+		min-width: 70%;
+		max-width: 70%;
+	}
+	.articl .form .msg{
+		font-size: 18px;
+	}
+}
+@media (max-width:600px){
+	.body .articl{
+		margin-top:38%;
+		min-width: 80%;
+		max-width: 80%;
+	}
+	.articl .form .msg{
+		font-size: 16px;
+	}
+}
+/* Login Page Style */
+
+.articl .form .login{
+	display: none;
+	color: #fff;
+	margin-top: 5%;
+}
+
+.articl .form #loginKeep{
+	font-size: 18px;
+	margin-top: 3%;
+	color: #fff;
+}
+/* List page Style */
+a{
+	text-decoration: none;
+	color: black;
+}
+#listMenu{
+	display: flex;
+	flex-direction: row;
+	min-height: 80px;
+	max-height: 80px;
+	background-color: #fff;
+	border-bottom: 3px solid black;
+	
+	
+}
+#listMenu #listUl{
+	display: inherit;
+	min-width: 90%;
+	max-width: 90%;
+	
+}
+#listMenu #listUl li{
+	margin-left: 5%;
+	margin-top: 2%;
+	list-style-type: none;
+	padding-bottom: 5px;
+}
+#listMenu #listUl li a{
+ color: black;
+ font-size: 20px;
+}
+#listMenu #listUl li a:hover{
+	border-bottom: 1px solid black;
+	color: royalblue;
+} 
+#listMenu #logout{
+	display: inherit;
+	margin-top: 2%;
+	margin-right: 1%;
+	margin-left: 5%;
+	color: black;
+ 	font-size: 20px;
+}
+#listMenu #logout:hover{
+	color: royalblue;
+}
+@media (max-width:1080px){
+	#listMenu #listUl{
+		min-width: 86%;
+		max-width: 86%;
+	}
+	#listMenu #logout{
+		margin-top: 3%;
+	}
+	#listMenu #listUl li{
+		margin-top: 3%;
+	}
+}
+@media (max-width:900px){
+	#listMenu #listUl{
+		min-width: 80%;
+		max-width: 80%;
+	}
+	#listMenu #logout{
+		margin-top: 5%;
+	}
+	#listMenu #listUl li{
+		margin-top: 5%;
+	} 
+}
+#listContainer{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 95vh;
+	max-height: 100%;
+	background-color: #eee;
+	padding-top: 15px;
+}
+#listContainer table,#listContainer tr,#listContainer th,#listContainer td{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+#listContainer table tr td img{
+	min-width: 25%;
+	max-width: 25%;
+	min-height:25%;
+	max-height: 25%;
+}
+
+/*Register Page style*/
+#desc{
+	margin-top: 5%;
+	color: #eee;
+	font-size: 20px;
+}
+#text{
+	border-bottom: 3px solid #fff;
+	border-radius: 20px;
+	background-color: #555;
+	color: #fff;
+	font-size: 18px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 10vh;
+	max-height: 10vh;
+}
+
+/* ticket Page Style*/
+#ticketMenu{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 10vh;
+	max-height: 10%;
+	border-bottom: 2px solid black;
+}
+#ticketMenu #ticketUl{
+	min-width: 75%;
+	max-width: 75%;
+	display: inline;
+	float: left;
+	margin-top: 1.5%;
+}
+#ticketMenu #ticketUl li{
+	display:inline;
+	margin-left: 2%;
+	font-size: 20px;
+	font-family: georgia;
+}
+#ticketMenu #ticketUl li a:hover{
+	color: blueviolet;
+	border-bottom:1px solid black;
+}
+#ticketMenu #tigketForm{
+	margin-right: 2%;
+	margin-top: 1%;
+	float: right;
+	
+
+}
+#ticketMenu #tigketForm #dateQ{
+	font-size: 20px;
+	border: 1px solid black;
+	border-radius: 15px;
+}
+@media (max-width:1080px){
+	#ticketMenu #tigketForm #dateQ{
+		font-size: 17px;
+	}
+	#ticketMenu #ticketUl{
+		margin-top: 2.5%;
+	}
+}
+@media (max-width:992px){
+	#ticketMenu #tigketForm #dateQ{
+		font-size: 15px;
+		margin-top: 1.5%;
+	}
+	#ticketMenu #ticketUl{
+		margin-top: 2.5%;
+	}
+}
+@media (max-width:800px){
+	#ticketMenu #tigketForm{
+		margin-top: 2%;
+	}
+	#ticketMenu #tigketForm #dateQ{
+		font-size: 13px;
+	}
+	#ticketMenu #ticketUl{
+		min-width: 65%;
+		max-width: 65%;
+	}
+	#ticketMenu #ticketUl li{
+		font-size: 17px;
+	}
+}
+@media (max-width:600px){
+	#ticketMenu #tigketForm{
+		margin-top: 2%;
+	}
+	#ticketMenu #tigketForm #dateQ{
+		font-size: 13px;
+	}
+	#ticketMenu #ticketUl{
+		min-width: 60%;
+		max-width: 60%;
+		margin-top: 2.5%;
+	}
+	#ticketMenu #ticketUl li{
+		font-size: 15px;
+	}
+}
+#ticketArticle{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 90vh;
+	max-height: 100%;
+	background-color: #ccc;
+	padding-top: 3%;
+}
+#ticketArticle #ticketTable{
+min-width: 100%;
+max-width: 100%;
+background-color: white;
+}
+#ticketArticle #ticketTable,thead tr,thead tr th,tbody tr,tbody tr td{
+	border:2px solid black;
+	border-collapse: collapse;
+}
+/* Home Page Style */
+#homeMenu{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 10vh;
+	max-height: 10vh;
+	position: fixed;
+	background-color: #666;
+	margin-bottom: 20px;
+}
+#homeMenu #homeUl{
+	margin-top: 1%;
+}
+#homeMenu #homeUl li{
+	font-size: 20px;
+	margin-left: 3%;
+	display: inline;
+}
+#homeMenu #homeUl li a:hover{
+	color: whitesmoke;
+	border-bottom: 1px solid black;
+}
+#homeContainer{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#homeContainer .homeContent{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 50%;
+	max-height: 50%;
+	display: flex;
+	flex-direction: row;
+}
+#homeContainer .homeContent .homeArticl{
+	border: 1px solid black;
+	margin: 5%;
+	padding:3px;
+	border: 5px solid #fff;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 20px rgb(50, 50, 50,1.0);
+}
+#homeContainer .homeContent .homeArticl img{
+	min-width: 99%;
+	max-width: 99%;
+	min-height: 50%;
+
+}

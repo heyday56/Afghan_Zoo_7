@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Ticket</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="body">
+<div class="articl">
+	<form method="post" class="form" onsubmit="return addTicketValidate();">
+		<label class="msg">Get Ticket Here</label>
+		<input type="text" name="addTicketName" id="addTicketName" required placeholder="Type Your Name" class="input">
+		<input type="number" name="addTicketAmount" id="addTicketAmount" required placeholder="How Many Person" class="input">
+		<input type="date" name="addTicketDate" id="addTicketDate" required class="input">
+		<label class="error" id="addTicketError"></label>
+		<input type="submit" name="addTicketSubmit" value="Get" class="submit">
+	</form>
+</div>
+
+
+
+
+<script type="text/javascript" src="script/javaScript.js"></script>
+</body>
+</html>

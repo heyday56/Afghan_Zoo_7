@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Change Account</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="body">
+	<div class="articl">
+		<form method="post" onsubmit="return chAccountValidate();" action="newAccount.html" class="form">
+			<label class="msg">Type Your Current Info</label>
+			<input type="text" name="chAccountUsername" id="chAccountUsername" required placeholder="Type Username" class="input">
+			<input type="password" name="chAccountPassword" id="chAccountPassword" required placeholder="Type Password" class="input">
+			<label id="chAccountErrorMsg" class="error"></label>
+			<input type="submit" name="chAccountSubmit" value="Change" id="chAccountSubmit" class="submit">
+		</form>
+	</div>
+	<script type="text/javascript" src="script/javaScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="body">
+<div class="articl">
+	<form method="post" action="list.html" class="form">
+		<label class="msg">Sign In Yourself</label>
+		<label id="loginUsernameMsg" class="login">Type your Username</label>
+		<input type="text/css" required name="loginUsername" id="loginUsername" placeholder="Type your Username" class="input" onkeyup="usernameValidate();">
+		<label id="loginPasswordMsg" class="login">Type Your Password</label>
+		<input type="password" id="loginPassword" name="loginPassword" required placeholder="Type your Password" class="input" onkeyup="passwordValidate();">
+		<label for="keepIn" id="loginKeep"><input type="checkbox" name="keepIn" id="keepIn">Keep me login </label>
+		<input type="submit" name="loginSubmit" id="loginSubmit" value="Login" class="submit">
+	</form>
+</div>
+<script type="text/javascript" src="library/jquery.js"></script>
+<script type="text/javascript" src="script/javaScript.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#loginUsername").on("focus",function(){
+	$(this).css({"marginTop":"0px","placeholder":""});
+	$("#loginUsernameMsg").css("display","flex")
+	$("#loginUsernameMsg").animate({"marginBottom":"5px"},1000);
+});
+$("#loginPassword").on("focus",function(){
+	$(this).css({"marginTop":"0px","placeholder":""});
+	$("#loginPasswordMsg").css("display","flex")
+	$("#loginPasswordMsg").animate({"marginBottom":"5px"},1000);
+});
+});
+</script>
+
+</body>
+</html>

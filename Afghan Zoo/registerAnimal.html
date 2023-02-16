@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Regster Animal</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="body">
+<div class="articl">
+	<form method="post" action="list.html" class="form" enctype="multipart/form-data">
+		<label class="msg">Register An Animal</label>
+		<input type="text" name="registerName" id="registerName" class="input" required placeholder="Type Animal Name">
+		<select class="input" name="registerType">
+			<option value="wild">Wild</option>
+			<option value="sea">Sea</option>
+			<option value="bird">Bird</option>
+		</select>
+		<label id="desc">Description</label>
+		<textarea name="registerDescription" id="text"></textarea>
+		<input type="file" name="registerImage" required class="input">
+		<input type="submit" name="registerSubmit" value="Register" class="submit">
+	</form>
+</div>
+
+
+
+</body>
+</html>
